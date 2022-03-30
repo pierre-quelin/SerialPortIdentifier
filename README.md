@@ -9,15 +9,15 @@ Program to easily list and physically identify all serial ports installed on a c
 * The "control button" associated with the connected port will be switched to the selected state.
 * Enjoy ;-)
 
-##Creation of a standalone executable in order not to have to install python on the target.
+## Creation of a standalone executable in order not to have to install python on the target.
 
-###Install tox
+### Install tox
 
 ```shell
 me@mypc:~/workspace/SerialPortIdentifier$ pip install tox
 ```
 
-###Build
+### Build
 
 Windows vs Linux see [tox.ini](tox.ini)
 
@@ -25,7 +25,7 @@ Windows vs Linux see [tox.ini](tox.ini)
 me@mypc:~/workspace/SerialPortIdentifier$ tox
 ```
 
-###Output
+### Output
 
 ```shell
 me@mypc:~/workspace/SerialPortIdentifier$ tox
