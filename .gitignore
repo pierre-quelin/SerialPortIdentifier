@@ -4,3 +4,4 @@
 /.tox/
 /.project
 /.pydevproject
+/SerialPortIdentifier.spec
