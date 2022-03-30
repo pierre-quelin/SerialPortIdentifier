@@ -1,7 +1,7 @@
 # SerialPortIdentifier
 Program to easily list and physically identify all serial ports installed on a computer.
 
-##Usage
+## Usage
 
 * Build a dongle with a basic DB9 connector and join only pins 2 (Rx) and 3 (Tx) together.
 * Disconnect all serial port connectors from the PC.
