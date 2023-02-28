@@ -26,4 +26,4 @@ me@mypc:~/workspace/SerialPortIdentifier$ tox
 
 Windows vs Linux(default) see "serial.png;." vs "serial.png:." in [tox.ini](tox.ini)
 
-Any help in resolving this command line issue with tox is welcome. TY
+Any help in resolving this command line issue with pyinstaller is welcome. TY
