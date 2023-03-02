@@ -19,10 +19,10 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
         
-    - name: Install
+    - name: Install dependencies
       run: pip install tox
 
-    - name: Build
+    - name: Build SerialPortIdentifier.exe
       run: tox
       
     - uses: actions/upload-artifact@v3
