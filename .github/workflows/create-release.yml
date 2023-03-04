@@ -1,8 +1,9 @@
-on:
-  push:
-    # Sequence of patterns matched against refs/tags
-    tags:
-      - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
+on: [push]
+# on:
+#  push:
+#    # Sequence of patterns matched against refs/tags
+#    tags:
+#      - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
 
 name: Create Release
 
@@ -11,8 +12,11 @@ jobs:
     name: Create Release
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - uses: actions/download-artifact@v3
+        id: download
+        with:
+          name: 'SerialPortIdentifier.exe'
+          path: dist/SerialPortIdentifier.exe
       
       - name: Create Release
         id: create_release
